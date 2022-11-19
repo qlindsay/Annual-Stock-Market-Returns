@@ -1,0 +1,16 @@
+# Annual Stock Market Returns from 2012-2021
+
+import matplotlib.pyplot as plt 
+
+year = [2013, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+annual_return = [13.41, 29.60, 11.39, -0.75, 9.54, 19.42, -6.24, 28.88, 16.26, 26.89]
+positions = range(len(annual_return))
+
+plt.bar(year, annual_return, align='center', color=('green','green','green','red','green','green','red',
+                                                   'green','green','green'))
+
+plt.title('Stock Market Returns',fontweight='bold')
+plt.xlabel('Year',fontweight='bold')
+plt.ylabel('Annual Return %',fontweight='bold')
+
+plt.show()
